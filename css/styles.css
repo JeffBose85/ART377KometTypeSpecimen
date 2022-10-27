@@ -1,0 +1,377 @@
+
+/*
+BACKGROUND COLORS:
+#282828 - Dark Gray
+#3B3B3B - Gray
+#555555 - Light Gray
+
+#EE2500 - Red
+#EE5600 - Orange
+#EE8A00 - Light Orange
+
+
+*/
+
+
+@import url("https://use.typekit.net/hjt1gxe.css");
+
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+body {
+  font-family: "Komet", sans-serif, serif;
+  background-color:#3B3B3B;
+  color:white;
+  margin:0px;
+  
+}
+
+::selection {
+  background-color:#EE8A00
+}
+
+img {
+    max-width: 100%;
+}
+
+/* TODO: FIX ANCHOR LINKS*/
+.anchor {
+  position: absolute;
+  transform: translateY(-5vh);
+}
+
+/* Navigation */
+.navigation {
+  width:100%;
+  height: 110px;
+  background-color: #282828;
+  display:flex;
+  position:sticky;
+  top:0;
+  z-index: 1;
+
+}
+
+#NAVTITLE {
+  font-size: 75px;
+  padding-top:5px;
+  padding-left: 10px;
+  font-weight: 900;
+  display:flex;
+}
+
+#NAVBTNSHOLDER {
+  width:70%;
+  margin:auto;
+  display: flex;
+}
+
+.navbutton {
+
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+
+  background-color:#555555;
+  width:100%;
+  margin:auto;
+  margin-right:5px;
+  padding: 10px;
+  border: black 1px solid;
+  border-radius: 30px;
+}
+
+.navbutton:hover {
+  background-color:#3B3B3B;
+}
+
+#NAVRED {
+  border: #EE2500 4px solid;
+  margin:0px;
+  position:sticky;
+  top:110px;
+  z-index: 1;
+}
+
+#NAVORANGE {
+  border: #EE5600 4px solid;
+  margin:0px;
+  position:sticky;
+  top:118px;
+  z-index: 1;
+}
+
+#NAVYELLOW {
+  border: #EE8A00 4px solid;
+  margin:0px;
+  position:sticky;
+  top:126px;
+  z-index: 1;
+}
+
+.totop {
+  background-color: #282828;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  display:flex;
+  border: #EE2500 1px solid;
+  border-radius: 100%;
+  float:right;
+  margin-right: 25px;
+  margin-top: 25px;
+  position:sticky;
+  top:160px;
+  z-index: 1;
+
+  text-decoration: none;
+  color:white;
+  font-size: 60px;
+  font-weight: 700;
+  filter: drop-shadow(5px 5px 0px black);
+}
+
+p.totoptext {
+  position: relative;
+  line-height: 10px;
+  margin:auto;
+}
+/* ------------------------ */
+
+/* Sections */
+.section {
+  width:73%;
+  margin:auto;
+  margin-top:250px;
+}
+
+.sectionI
+{
+  width:50%;
+}
+
+.sectionheader {
+  background-color:#555555;
+  border: #EE2500 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+
+  font-size: 35px;
+  font-weight: bold;
+
+  width:auto;
+  height: auto;
+  display:inline-flex;
+  margin-left: 25px;
+  padding:15px;
+}
+/* -------END NAV SECTION-------- */
+
+/* Introduction Section */
+.introduction {
+  background-color:#555555;
+  border: #EE5600 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+
+  margin-top:25px;
+  padding:25px;
+}
+/* -------END INTRO SECTION-------- */
+
+/* Alphabet Section */
+.AZ {
+  background-color:#555555;
+  border: #EE5600 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+
+  font-size: 100px;
+  text-align: center;
+
+  margin-top:25px;
+  padding:25px;
+}
+
+.weightbar {
+  width: auto;
+  margin:auto;
+  margin-top:20px;
+  text-align: center;
+
+}
+
+.weightbtn {
+  background-color:#555555;
+  border: #EE8A00 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+
+  width:auto;
+  padding: 10px 15px 10px 15px;
+  margin: 10px 10px 10px 10px;
+  background-color: #555555;
+  color:white;
+  font-size: 60px;
+}
+
+.weightbtn:hover {
+  background-color: #3b3b3b
+}
+
+.arrowbtn {
+  background-color:#555555;
+  border: #EE8A00 1px solid;
+  border-radius: 100%;
+  filter: drop-shadow(5px 5px 0px black);
+
+
+  color:white;
+  text-align: center;
+  font-size: 50px;
+  width:76px;
+  height:76px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.arrowbtn:hover {
+  background-color: #3b3b3b
+}
+/* ------END AZ SECTION------ */
+
+/* Body Text Section */
+.bodytext {
+  background-color:#555555;
+  border: #EE5600 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+
+  margin-top:25px;
+  padding:25px;
+  font-size: 20px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.paragraph1 {
+  width:57%;
+  height:auto;
+  margin-right:3%;
+}
+
+.paragraph2 {
+  width:40%;
+  text-align: justify;
+  float:right;
+  font-weight: lighter;
+}
+h3.p2 {
+  font-weight: lighter;
+}
+
+.paragraph3 {
+  width:100%;
+}
+
+/* ------END BODY SECTION------*/
+
+/* Display Text Section */
+.displaysection {
+  width:100%;
+}
+
+.displayheader {
+  margin-left: 43%;
+  margin-right:43%;
+  text-align: center;
+}
+
+.displaytext {
+  background-color:#555555;
+  border-top: #EE5600 1px solid;
+  border-bottom: #EE5600 1px solid;
+  filter: drop-shadow(5px 5px 0px black);
+
+  margin-top:25px;
+  padding:25px;
+  height:2000px;
+  overflow-x: hidden;
+}
+
+.gigantic {
+  position: absolute;
+  filter: drop-shadow(5px 5px 0px black);
+  font-weight: 700;
+  font-size: 29vw;
+  left: -11vw;
+  letter-spacing: -2.5vw;
+}
+
+.questionably {
+  filter: drop-shadow(5px 5px 0px black);
+  position: absolute;
+  font-size:  12vw;
+  top:30vw;
+  right:3vw;
+}
+
+.multipronged {
+  filter: drop-shadow(5px 5px 0px black);
+  position:absolute;
+  font-size:12vw;
+  top: 40.5vw;
+  left:3.65vw;
+}
+
+.hypnotizable {
+
+    position:absolute;
+    font-size:10vw;
+    font-weight: 600;
+    top: 55vw;
+    right:3vw;
+}
+
+.hypnotizablered {
+  right:3.8vw;
+  color:#EE2500;
+}
+
+.hypnotizableorange {
+  right:2.2vw;
+  color:#EE5600;
+}
+
+.thisiskomet {
+  
+  filter: drop-shadow(5px 5px 0px black);
+  position:absolute;
+  font-size:25vw;
+  font-weight: 600;
+  top: 75vw;
+  left:2vw;
+  letter-spacing: -1.4vw;
+  line-height: 17.5vw;
+}
+
+/* ------END DISPLAY SECTION ------*/
+
+/* Experiments Section */
+.experiments {
+  background-color:#555555;
+  border: #EE5600 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+
+  margin-top:25px;
+  padding:25px;
+}
+/*-------END EXPERIMENT SECTION-------*/
