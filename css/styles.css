@@ -181,6 +181,7 @@ p.totoptext {
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
 
+  max-width: 1600px;
   margin-top:25px;
   padding:25px;
 }
@@ -192,6 +193,7 @@ p.totoptext {
   border: #EE5600 1px solid;
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
+  max-width: 1600px;
 
   font-size: 100px;
   text-align: center;
@@ -256,6 +258,7 @@ p.totoptext {
 
   margin-top:25px;
   padding:25px;
+  max-width: 1600px;
   font-size: 20px;
   display:flex;
   flex-wrap: wrap;
@@ -302,7 +305,7 @@ h3.p2 {
 
   margin-top:25px;
   padding:25px;
-  height:2000px;
+  height:120vw;
   overflow-x: hidden;
 }
 
