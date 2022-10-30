@@ -39,7 +39,6 @@ img {
     max-width: 100%;
 }
 
-/* TODO: FIX ANCHOR LINKS*/
 .anchor {
   position: absolute;
   transform: translateY(-5vh);
@@ -73,7 +72,7 @@ img {
 
 .navbutton {
 
-  font-size: 40px;
+  font-size: 2.5vw;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -376,5 +375,47 @@ h3.p2 {
 
   margin-top:25px;
   padding:25px;
+  height: 2000px;
+}
+
+#kometexp1 {
+  font-size: 12vw;
+  font-weight: 900;
+  
+  position: absolute;
+  left:20vw;
+
+}
+
+#kometexp2 {
+  font-size: 12vw;
+  font-weight: 900;
+  
+  position: absolute;
+  left:17.4vw;
+  opacity: 75%;
+
+}
+
+#kometexp3 {  
+  font-size: 12vw;
+  font-weight: 900;
+  
+  position: absolute;
+  left:14.8vw;
+  opacity: 50%;
+
+
+}
+
+#kometexp4 {
+  font-size: 12vw;
+  font-weight: 900;
+  
+  position: absolute;
+  left:12.2vw;
+  opacity: 25%;
+
+
 }
 /*-------END EXPERIMENT SECTION-------*/
