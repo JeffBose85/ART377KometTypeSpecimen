@@ -28,6 +28,7 @@ body {
   background-color:#3B3B3B;
   color:white;
   margin:0px;
+  overflow-x: hidden;
   
 }
 
@@ -87,9 +88,6 @@ img {
   border-radius: 30px;
 }
 
-.navbutton:hover {
-  background-color:#3B3B3B;
-}
 
 #NAVRED {
   border: #EE2500 4px solid;
@@ -225,9 +223,6 @@ p.totoptext {
   font-size: 2.5vw;
 }
 
-.weightbtn:hover {
-  background-color: #3b3b3b
-}
 
 .arrowbtn {
   background-color:#555555;
@@ -245,9 +240,6 @@ p.totoptext {
   margin-right: .1vw;
 }
 
-.arrowbtn:hover {
-  background-color: #3b3b3b
-}
 /* ------END AZ SECTION------ */
 
 /* Body Text Section */
@@ -377,7 +369,7 @@ h3.p2 {
 
   margin-top:25px;
   padding:25px;
-  height: 2000px;
+  height: 135vw;
 }
 
 #kometexp1 {
@@ -460,7 +452,7 @@ h3.p2 {
   position: absolute;
   font-size: 10vw;
   left:-.5vw;
-  top:28.5vw
+  top:28.5vw;
 }
 
 .rocketsidenose {
@@ -500,9 +492,10 @@ h3.p2 {
 
 .calendar {
   position: absolute;
-  top:95vw;
+  top:85vw;
   width:90%;
   margin:auto;
+  right:5%;
 }
 
 .grid-container {
@@ -528,6 +521,8 @@ h3.p2 {
   padding-top: .6vw;
   border: black 1px solid;
   text-align: center;
+  font-size: 2vw;
+  padding:.1vw;
   color:black;
   font-weight: 600;
   background-color: white;
@@ -540,6 +535,7 @@ h3.p2 {
   padding-top: .1vw;
   color:black;
   background-color: white;
+  height:7vw;
 }
 
 .offday {
@@ -551,3 +547,76 @@ h3.p2 {
 }
 
 /*-------END EXPERIMENT SECTION-------*/
+
+/* Get the Font section */
+
+.getthefont {
+  
+  background-color:#555555;
+  border: #EE5600 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+
+  width:38vw;
+  margin:auto;
+  margin-top: 2vw;
+  font-size: 5vw;
+  font-weight: 900;
+  padding-left:1.5vw;
+  text-align: center;
+  color:white;
+  display:flex;
+  margin-bottom: 150px;
+
+}
+
+button:hover, a:hover {
+  background-color: #3b3b3b;
+}
+
+button:active, a:active {
+  background-color: #EE8A00;
+}
+/* ------- END GTF --------/*
+
+/* Footer Section */
+
+.footer {
+  background-color: #282828;
+  width:100%;
+  height:180px;
+  display:flex;
+}
+
+.footerabout {
+  text-align: center;
+  font-size: min(1.5vw, 1.5vw);
+  margin:auto;
+  margin-top:15px;
+  position: absolute;
+  left: 40%;
+}
+
+div.footernav {
+  position: absolute;
+  right:10px;
+  text-align: right;
+  
+}
+
+a {
+  text-decoration: none;
+  font-size: min(1.3vw, 1.3vw);
+  color:white;
+}
+
+#FOOTERTITLE {
+  
+  font-size: min(6vw,6vw);
+  padding-top:5px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+
+/* -------- END FOOTER ------ */
