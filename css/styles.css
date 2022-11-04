@@ -15,6 +15,50 @@ BACKGROUND COLORS:
 
 @import url("https://use.typekit.net/hjt1gxe.css");
 
+@keyframes totopanim {
+  from {line-height: 40px;}
+  to {line-height: 60px;}
+}
+
+@keyframes color-change {
+  0% { color:#EE2500; }
+  25% { color:#EE5600; }
+  50% { color:#EE8A00; }
+  75% { color:#EE5600; }
+  100% { color: #EE2500; }
+}
+
+@keyframes backcolor-change {
+  0% { background-color:#EE2500; }
+  25% { background-color:#EE5600; }
+  50% { background-color:#EE8A00; }
+  75% { background-color:#EE5600; }
+  100% { background-color: #EE2500; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0) }
+  25% { transform: translateX(.2vw) }
+  50% { transform: translateY(-.2vw) }
+  75% { transform: translateX(.2vw) }
+  100% { transform: translateY(0) }
+ }
+
+ @keyframes kometexp1 {
+  10% {transform: translateX(0vw);}
+  20% {transform:translateX(2.6vw);}
+}
+
+@keyframes kometexp3 {
+  10% {transform: translateX(0vw);}
+  20% {transform:translateX(-2.6vw);}
+}
+
+@keyframes kometexp4 {
+  10% {transform: translateX(0vw);}
+  20% {transform:translateX(-5.2vw);}
+}
+
 html {
     box-sizing:border-box;
 }
@@ -33,7 +77,8 @@ body {
 }
 
 ::selection {
-  background-color:#EE8A00
+  color:#EE2500;
+  background-color:white;
 }
 
 img {
@@ -65,6 +110,10 @@ img {
   display:flex;
 }
 
+#NAVTITLE:hover {
+  animation: color-change 2s infinite;
+}
+
 #NAVBTNSHOLDER {
   width:70%;
   margin:auto;
@@ -86,6 +135,14 @@ img {
   padding: 10px;
   border: black 1px solid;
   border-radius: 30px;
+}
+
+.navbutton:hover {
+  animation: color-change 2s infinite;
+}
+
+.navbutton:active {
+  animation: backcolor-change 2s reverse infinite;
 }
 
 
@@ -138,10 +195,26 @@ img {
   filter: drop-shadow(5px 5px 0px black);
 }
 
+.totop:hover {
+  animation: color-change 2s infinite;
+}
+
+.totop:active {
+  animation: backcolor-change 2s infinite;
+}
+
 p.totoptext {
   position: relative;
-  line-height: 10px;
+  line-height: 40px;
   margin:auto;
+  width:90%;
+
+}
+
+p.totoptext:hover {
+  animation: totopanim;
+  animation-duration: 1s;
+  line-height: 60px;
 }
 /* ------------------------ */
 
@@ -154,6 +227,7 @@ p.totoptext {
 
 .sectionI
 {
+  margin-top: 150px;;
   width:50%;
 }
 
@@ -163,7 +237,7 @@ p.totoptext {
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
 
-  font-size: 35px;
+  font-size: 2vw;
   font-weight: bold;
 
   width:auto;
@@ -181,29 +255,31 @@ p.totoptext {
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
 
+  font-size: 1.2vw;
   max-width: 1600px;
   margin-top:25px;
   padding:25px;
+  line-height: 35px;
 }
 /* -------END INTRO SECTION-------- */
 
 /* Alphabet Section */
-.AZ {
+#AZ {
   background-color:#555555;
   border: #EE5600 1px solid;
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
   max-width: 1600px;
 
-  font-size: 100px;
+  font-size: 5vw;
   text-align: center;
 
   margin-top:25px;
-  padding:25px;
+  padding:1vw;
 }
 
 .weightbar {
-  width: auto;
+  width: 100%;
   margin:auto;
   margin-top:20px;
   text-align: center;
@@ -216,13 +292,12 @@ p.totoptext {
   filter: drop-shadow(5px 5px 0px black);
 
   width:auto;
-  padding: 10px 25px 10px 25px;
+  padding: .5vw 1vw .5vw 1vw;
   margin: .5vw;
   background-color: #555555;
   color:white;
   font-size: 2.5vw;
 }
-
 
 .arrowbtn {
   background-color:#555555;
@@ -240,6 +315,28 @@ p.totoptext {
   margin-right: .1vw;
 }
 
+.customtext {background-color:#555555;
+  border: #EE5600 1px solid;
+  border-radius: 30px;
+  filter: drop-shadow(5px 5px 0px black);
+  width:80%;
+  max-width: 1600px;
+
+  font-size: 5vw;
+  text-align: center;
+
+  padding:1vw;
+
+  color:white;
+  font-family: Komet;
+  margin:10%;
+  margin-top: 1vw;
+  margin-bottom: 0;
+
+  resize: none;
+
+}
+
 /* ------END AZ SECTION------ */
 
 /* Body Text Section */
@@ -252,7 +349,7 @@ p.totoptext {
   margin-top:25px;
   padding:25px;
   max-width: 1600px;
-  font-size: 20px;
+  font-size: 1.2vw;
   display:flex;
   flex-wrap: wrap;
 }
@@ -372,13 +469,17 @@ h3.p2 {
   height: 135vw;
 }
 
+#kometexperiment:hover {
+  animation: color-change 10s infinite;
+}
+
 #kometexp1 {
   font-size: 12vw;
   font-weight: 900;
   
   position: absolute;
-  left:20vw;
-
+  left:17.4vw;
+  animation: kometexp1 10s infinite;
 }
 
 #kometexp2 {
@@ -388,7 +489,6 @@ h3.p2 {
   position: absolute;
   left:17.4vw;
   opacity: 75%;
-
 }
 
 #kometexp3 {  
@@ -396,10 +496,9 @@ h3.p2 {
   font-weight: 900;
   
   position: absolute;
-  left:14.8vw;
+  left:17.4vw;
   opacity: 50%;
-
-
+  animation: kometexp3 10s infinite;
 }
 
 #kometexp4 {
@@ -407,10 +506,9 @@ h3.p2 {
   font-weight: 900;
   
   position: absolute;
-  left:12.2vw;
+  left:17.4vw;
   opacity: 25%;
-
-
+  animation: kometexp4 10s infinite;
 }
 
 .rocket{
@@ -419,29 +517,33 @@ h3.p2 {
   left:25%;
   top:20vw;
   margin: auto;
+  animation: shake 0.5s infinite;
 }
 
 .rocketmiddle {
   font-size: 7vw;
   line-height: 4.7vw;
   position: absolute;
-  left:15vw;
+  left:13vw;
+  transform: rotate(-5deg);
 }
 
 .rocketleft {
   font-size: 5vw;
   line-height: 3.4vw;
   position: absolute;
-  left:12vw;
+  left:10.5vw;
   top:7.9vw;
+  transform: rotate(-5deg);
 }
 
 .rocketright {
   font-size: 5vw;
   line-height: 3.4vw;
   position: absolute;
-  left:19.4vw;
-  top:7.9vw;
+  left:17.7vw;
+  top:7.3vw;
+  transform: rotate(-5deg);
 }
 
 .rocketmiddlenose {
@@ -468,27 +570,46 @@ h3.p2 {
 
 .largeplume {
   font-size: 6vw;
+  animation: color-change 2s infinite;
+}
+
+.largeplumerev {
+  font-size: 6vw;
+  animation: color-change 2s reverse infinite;
 }
 
 .mediumplume {
   font-size: 4vw;
+  animation: color-change 2s infinite;
+}
+
+.mediumplumerev {
+  font-size: 4vw;
+  animation: color-change 2s reverse infinite;
 }
 
 .smallplume {
-  font-size: 2vw;
+  font-size: 2.5vw;
+  animation: color-change 2s infinite;
 }
 
-.redplume {
-  color: #EE2500
+.smallplumerev {
+  font-size: 2.5vw;
+  animation: color-change 2s reverse infinite;
 }
 
-.orangeplume {
-  color:#EE5600
+.fastplume {
+  animation: shake 0.1s infinite;
 }
 
-.yellowplume {
-  color:#EE8A00
+.normalplume {
+  animation: shake 0.2s infinite;
 }
+
+.slowplume {
+  animation: shake 0.3s infinite;
+}
+
 
 .calendar {
   position: absolute;
@@ -529,7 +650,7 @@ h3.p2 {
 }
 
 .day {
-  height:50px;
+  width:auto;
   border: black 1px solid;
   padding: .5vw;
   padding-top: .1vw;
@@ -575,7 +696,7 @@ button:hover, a:hover {
 }
 
 button:active, a:active {
-  background-color: #EE8A00;
+  animation: backcolor-change 2s infinite;
 }
 /* ------- END GTF --------/*
 
@@ -584,35 +705,36 @@ button:active, a:active {
 .footer {
   background-color: #282828;
   width:100%;
-  height:180px;
+  height:12vw;
   display:flex;
 }
 
 .footerabout {
   text-align: center;
-  font-size: min(1.5vw, 1.5vw);
+  font-size: min(1.0vw, 1.0vw);
   margin:auto;
   margin-top:15px;
   position: absolute;
-  left: 40%;
+  left: 42%;
 }
 
 div.footernav {
   position: absolute;
   right:10px;
   text-align: right;
+  line-height: 1.5vw;
   
 }
 
 a {
   text-decoration: none;
-  font-size: min(1.3vw, 1.3vw);
+  font-size: min(1.0vw, 1.0vw);
   color:white;
 }
 
 #FOOTERTITLE {
   
-  font-size: min(6vw,6vw);
+  font-size: min(5vw,5vw);
   padding-top:5px;
   padding-left: 10px;
   font-weight: 900;
