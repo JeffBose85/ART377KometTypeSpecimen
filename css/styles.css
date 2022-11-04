@@ -243,7 +243,7 @@ p.totoptext:hover {
   width:auto;
   height: auto;
   display:inline-flex;
-  margin-left: 25px;
+  margin-left: 3.5vw;
   padding:15px;
 }
 /* -------END NAV SECTION-------- */
@@ -269,6 +269,8 @@ p.totoptext:hover {
   border: #EE5600 1px solid;
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
+  margin:auto;
+  width:90%;
   max-width: 1600px;
 
   font-size: 5vw;
@@ -320,7 +322,7 @@ p.totoptext:hover {
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
   width:80%;
-  max-width: 1600px;
+  max-width: 1400px;
 
   font-size: 5vw;
   text-align: center;
@@ -346,6 +348,7 @@ p.totoptext:hover {
   border-radius: 30px;
   filter: drop-shadow(5px 5px 0px black);
 
+  margin: auto;
   margin-top:25px;
   padding:25px;
   max-width: 1600px;
@@ -383,8 +386,9 @@ h3.p2 {
 
 .displayheader {
   margin-left: 43%;
-  margin-right:43%;
+  margin-right: 43%;
   text-align: center;
+  width:14.04vw;
 }
 
 .displaytext {
