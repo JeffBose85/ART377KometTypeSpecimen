@@ -30,11 +30,13 @@ function ChangeAZWeight(weight) {
 function ChangeAZWeightLeft() {
     let index = weights.indexOf(weightstyle.fontWeight);
     aztext.style.fontWeight = weights[index - 1];
+    customtext.style.fontWeight = weights[index - 1];
 }
 
 function ChangeAZWeightRight() {
     let index = weights.indexOf(weightstyle.fontWeight);
     aztext.style.fontWeight = weights[index + 1];
+    customtext.style.fontWeight = weights[index + 1];
 }
 
 
