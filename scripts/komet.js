@@ -16,8 +16,8 @@ function StartUp() {
     weightstyle = getComputedStyle(azelement);
 
     for(let i = 0; i<weightbtns.length;i++) {
-        console.log("Setting weight: " + weights[i]);
         weightbtns[i].style.fontWeight = weights[i];
+        weightbtns[i].style.fontstyle = 'normal';
     }
 
 }

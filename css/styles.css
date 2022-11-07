@@ -299,6 +299,7 @@ p.totoptext:hover {
   background-color: #555555;
   color:white;
   font-size: 2.5vw;
+  font-style: normal;
 }
 
 .arrowbtn {
@@ -375,6 +376,14 @@ h3.p2 {
 
 .paragraph3 {
   width:100%;
+}
+
+.bodyhover {
+  font-weight:bolder;
+}
+
+.bodyhover:hover {
+  animation: color-change 2s infinite;
 }
 
 /* ------END BODY SECTION------*/
